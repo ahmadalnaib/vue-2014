@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/Home.vue';
 import JobsView from '../views/JobsView.vue';
+import NotFindView from '../views/404View.vue';
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -16,8 +17,8 @@ const router = createRouter({
       component: JobsView,
     },
     {
-      path: '*',
-      redirect: '/',
+      path: '/:pathMatch(.*)*',
+      component: NotFindView,
     },
   ],
 });
