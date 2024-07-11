@@ -29,19 +29,19 @@ const isActivelink=(routePath)=>{
                   to="/"
                   :class="[isActivelink('/') ? 
                   'bg-green-900 ' : 
-                  'hover:bg-gray-100 hover:text-white','text-white px-3 py-2']"
+                  'hover:bg-gray-900 hover:text-white','text-white px-3 py-2']"
                   >Home</RouterLink>
                 <RouterLink
                   to="/jobs"
                   :class="[isActivelink('/jobs') ? 
                   'bg-green-900 ' : 
-                  'hover:bg-gray-100 hover:text-white','text-white px-3 py-2']"
+                  'hover:bg-gray-900 hover:text-white','text-white px-3 py-2']"
                   >Jobs</RouterLink>
                 <RouterLink
                   to="/jobs/add"  
                   :class="[isActivelink('/jobs/add') ? 
                   'bg-green-900 ' : 
-                  'hover:bg-gray-100 hover:text-white','text-white px-3 py-2']"
+                  'hover:bg-gray-900 hover:text-white','text-white px-3 py-2']"
                   >Add Job</RouterLink
                 >
               </div>
