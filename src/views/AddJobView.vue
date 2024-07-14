@@ -42,6 +42,7 @@ const handleSubmit = async () => {
     router.push(`/jobs/${response.data.id}`);
   } catch (error) {
     handleError(error);
+    toast.error('Failed to add job');
   }
 };
 </script>
