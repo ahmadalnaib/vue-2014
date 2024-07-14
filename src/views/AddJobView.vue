@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios';
-import { useRouter } from 'vue-router';
+import router from '@/router';
 
 import { handleError, reactive } from 'vue';
 
